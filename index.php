@@ -45,7 +45,7 @@
     $posUno = strpos($mail, "@");
     $posDue = strpos($mail, ".");
 
-    if($lunghezza > 3 && $posUno && $posDue && is_numeric($age)){
+    if($lunghezza > 3 && $posUno && $posDue && is_numeric((int)$age)){
         echo "Accesso riuscito!";
     }else{
         echo "Accesso negato";
